@@ -50,6 +50,28 @@
             </div>
         </div>
     </section>
+    <section class="gallery-section">
+        <div class="container">
+            <h2>Галерея наших работ</h2>
+            <div class="gallery">
+                <div class="gallery-item" onclick="openModal(1)">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%233498DB'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='20'%3EПроект 1%3C/text%3E%3C/svg%3E" alt="Проект 1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="galleryModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="nav-btn prev" onclick="changeSlide(-1)">&#10094;</span>
+        <span class="nav-btn next" onclick="changeSlide(1)">&#10095;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+        </div>
+        <div class="caption-container">
+            <p id="modalCaption"></p>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
