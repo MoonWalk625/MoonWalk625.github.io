@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebSolutions - IT компания</title>
+     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -56,13 +56,30 @@
             </div>
         </div>
     </section>
+    <section class="contact-form-section">
+        <div class="container">
+            <h2>Оставить заявку</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваш email" required>
+                <textarea placeholder="Опишите ваш проект" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 WebSolutions. Все права защищены.</p>
+             <div class="social-links">
+            <a href="https://vk.com" target="_blank">VK</a>
+            <a href="https://telegram.org" target="_blank">Telegram</a>
+            <a href="https://youtube.com" target="_blank">YouTube</a>
+        </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <button class="back-to-top" title="Наверх">↑</button>
 </body>
 </html>
