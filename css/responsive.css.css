@@ -1,0 +1,75 @@
+/* Mobile First Approach */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        padding: 1rem 0;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu li {
+        margin: 0;
+        text-align: center;
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: 1rem;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 120px 0 60px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .services-preview h2,
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .service-card, 
+    .service-item, 
+    .portfolio-item, 
+    .blog-post, 
+    .contact-info {
+        padding: 1.5rem;
+    }
+}
